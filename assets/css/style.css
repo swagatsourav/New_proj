@@ -21,12 +21,17 @@
   --cap-anim-delay: 0.4s;
   --para-anim-delay: 0.6s;
   --btn-anim-delay: 0.7s;
+  --main-font: "Open Sans", sans-serif;
+  --font-one: "Montserrat", sans-serif;
+  --font-two: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* --font-bold: "Poppins", sans-serif; */
+  --font-bold: "Raleway", sans-serif;
 }
 
 body {
   background: #000;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--main-font);
 }
 
 a {
@@ -53,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -169,7 +174,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 0.6;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-two);
 }
 
 #header #logo h3 a#first_line {
@@ -201,7 +206,7 @@ h6 {
   font-size: 8px;
   color: var(--mt-color-link);
   letter-spacing: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
 }
 
 @media (max-width: 768px) {
@@ -209,7 +214,7 @@ h6 {
     font-size: 8px;
     color: var(--mt-color-link);
     letter-spacing: 3px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-one);
   }
 }
 
@@ -220,7 +225,7 @@ h6 {
 
 /* Yellow border in the left side of logo text */
 #header #logo #wrapping_logo_text {
-  border-left: 3px solid var(--mt-color);
+  border-left: 4px solid var(--mt-color);
   padding-left: 10px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -242,6 +247,34 @@ h6 {
   #header {
     padding: 10px;
   }
+}
+
+header#header.header-scrolled #logo h3 {
+  line-height: 0.4;
+}
+
+header#header.header-scrolled div h3 a#first_line {
+  font-size: 20px !important;
+  line-height: 0 !important;
+}
+
+header#header.header-scrolled div h3 a#second_line {
+  font-size: 10px !important;
+  line-height: 0 !important;
+}
+
+header#header.header-scrolled div#wrapping_logo_text {
+  border-width: 3px !important;
+  margin-top: 10px !important;
+  padding-bottom: 4px;
+}
+
+header#header.header-scrolled #logo p a {
+  font-size: 6px !important;
+  display: block;
+  padding-top: 6px;
+  /* padding-left: 2px; */
+  /* letter-spacing: 5px; */
 }
 
 /*--------------------------------------------------------------
@@ -341,11 +374,11 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: var(--mt-color-link);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-bold);
   /* font-family: 'Galdeano', sans-serif; */
   /* font-family: var(--link-font); */
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: var(--font-two); */
+  /* font-family: var(--font-one); */
   font-weight: 650;
   font-size: 12px;
   text-transform: uppercase;
@@ -464,7 +497,7 @@ h6 {
   display: block;
   outline: none;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-one);
 }
 
 #mobile-nav ul li a:hover {
@@ -738,7 +771,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 15px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-bold);
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 6px;
@@ -813,13 +846,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 15px 0 15px 0;
     font-size: 26px;
     font-weight: 700;
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-bold);
     text-transform: uppercase;
     text-align: center;
   }
 
   #intro .btn-get-started {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-one);
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -859,7 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation: swing-in-top-fwd cubic-bezier(0.175, 0.885, 0.32, 1.275)
     both;
   animation: swing-in-top-fwd cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-bold);
   font-size: 2vh;
   animation-duration: 1.2s;
   animation-delay: var(--para-anim-delay);
@@ -958,7 +991,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 768px) {
   #intro .btn-get-started {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-one);
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -992,4 +1025,196 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-header h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--mt-color);
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+/* Section with background
+--------------------------------*/
+.section-bg {
+  background: #f7f7f7;
+}
+
+/* Featured Services Section
+--------------------------------*/
+#featured-services {
+  background: #000;
+}
+
+#featured-services .box {
+  padding: 30px 20px;
+}
+
+#featured-services .box-bg {
+  background-image: linear-gradient(
+    0deg,
+    #000000 0%,
+    #242323 50%,
+    #000000 100%
+  );
+}
+
+#featured-services i {
+  color: var(--mt-color);
+  font-size: 48px;
+  display: inline-block;
+  line-height: 1;
+}
+
+#featured-services h4 {
+  font-weight: 400;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#featured-services h4 a {
+  color: #fff;
+}
+
+#featured-services h4 a:hover {
+  color: var(--mt-color);
+}
+
+#featured-services p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* About Us Section
+--------------------------------*/
+#about {
+  background: url("../img/mecauto.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 80px 0 40px 0;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#about .container {
+  position: relative;
+  z-index: 10;
+}
+
+#about .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+#about .about-col .img {
+  position: relative;
+}
+
+#about .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#about .about-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: var(--mt-color);
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc(50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#about .about-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#about .about-col:hover .icon {
+  background-color: #fff;
+}
+
+#about .about-col:hover i {
+  color: var(--mt-color);
+}
+
+#about .about-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#about .about-col h2 a {
+  color: #000;
+}
+
+#about .about-col h2 a:hover {
+  color: var(--mt-color);
+}
+
+#about .about-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
 }
