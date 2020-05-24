@@ -1425,7 +1425,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #btn_service {
   position: relative;
-  margin: auto;
-  align-items: center;
+
   display: inline-block;
 }
