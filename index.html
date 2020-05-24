@@ -22,35 +22,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <!-- ######################### -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Blinker&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asul&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap"
-      rel="stylesheet"
-    />
+
     <!-- Vendor CSS Files -->
 
     <link
@@ -63,7 +35,7 @@
     />
     <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link
-      href="assets/vendor/animate.css/animate.compact.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
       rel="stylesheet"
     />
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
@@ -360,30 +332,121 @@
                 </p>
               </div>
             </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="about-col">
+                <div class="img">
+                  <img
+                    src="assets/img/about-vision.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Vision</a></h2>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aut odit aut
+                  fugit, sed quia magni dolores eos qui ratione voluptatem sequi
+                  nesciunt Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="about-col">
+                <div class="img">
+                  <img
+                    src="assets/img/about-vision.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Vision</a></h2>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aut odit aut
+                  fugit, sed quia magni dolores eos qui ratione voluptatem sequi
+                  nesciunt Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="about-col">
+                <div class="img">
+                  <img
+                    src="assets/img/about-vision.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                </div>
+                <h2 class="title"><a href="#">Our Vision</a></h2>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aut odit aut
+                  fugit, sed quia magni dolores eos qui ratione voluptatem sequi
+                  nesciunt Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- End About Us Section -->
+
+      <div class="scrollUp">
+        <i class="fa fa-angle-double-up" area-hidden="true"></i>
+      </div>
     </main>
     <!-- End Main Section -->
+
+    <!-- Script Section -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/wow/wow.min.js"></script>
-    <!-- <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="assets/vendor/counterup/counterup.min.js"></script> -->
-    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-    <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/superfish/superfish.min.js"></script>
-    <!-- <script src="assets/vendor/hoverIntent/hoverIntent.js"></script> -->
-    <!-- <script src="assets/vendor/jquery-touchswipe/jquery.touchSwipe.min.js"></script> -->
-
-    <!-- Template Main JS File -->
+    <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+    <script src="assets/vendor/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const scrollUp = document.querySelector(".scrollUp");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollUp.classList.add("active");
+        } else {
+          scrollUp.classList.remove("active");
+        }
+      });
 
-    <script></script>
+      $(".scrollUp").on("click", function () {
+        $("body,html").animate(
+          {
+            scrollTop: 0,
+          },
+          600
+        );
+      });
+
+      // $(".scrollUp").click(function () {
+      //   $("html").animate(
+      //     {
+      //       scrollTop: 0,
+      //     },
+      //     600
+      //   );
+      // });
+    </script>
+    <!-- Template Main JS File -->
   </body>
 </html>
