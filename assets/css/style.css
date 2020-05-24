@@ -1,6 +1,6 @@
 /* header,<section-pend>,Navigation */
 
-/* Declaring the variable for color theme */
+
 
 @font-face {
   font-family: "Brandon Grotesque Bold";
@@ -8,6 +8,8 @@
     url("../fonts/BrandonGrotesque/brandon_bld-webfont.woff") format("woff");
 }
 
+
+/* Declaring the variables */
 :root {
   --mt-color: #fed400;
   --mt-color-link: #cccccc;
