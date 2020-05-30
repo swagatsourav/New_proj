@@ -7,29 +7,29 @@
 (function($) {
   "use strict";
 
-  // Preloader
-  $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
+
+	// Preloader
+	$(window).on('load', function() {
+		$("#preloader").delay(600).fadeOut();
+	});
+
+  // ScrollUp 
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+      $(".scrollUp").addClass('active');
+    } else {
+      $('.scrollUp').removeClass('active');
     }
   });
 
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function() {
+  $('.scrollUp').click(function() {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
 
   // Initiate the wowjs animation library
   new WOW().init();
@@ -112,7 +112,7 @@
 
         $('html, body').animate({
           scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+        }, 1000, 'easeInOutExpo');
 
         if ($(this).parents('.nav-menu').length) {
           $('.nav-menu .menu-active').removeClass('menu-active');
@@ -227,6 +227,17 @@
     dots: true,
     loop: true,
     items: 1
+  });
+
+  $('#about-slider').owlCarousel({
+    items:1,
+    loop:true,
+    margin:15,
+    nav: true,
+    navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    dots : true,
+    autoplay : false,
+    animateOut: 'fadeOut'
   });
 
 })(jQuery);
