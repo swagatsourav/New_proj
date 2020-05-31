@@ -1646,7 +1646,7 @@ height: auto;
 
 }
 
-.title:after {
+#features .title:after {
   content: "";
   display: block;
   height: 4px;
