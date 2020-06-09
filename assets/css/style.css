@@ -1423,7 +1423,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
-#about .about-col:hover .hover_content {
+#about .about-col.bg1.active .hover_content {
   /* -webkit-transform: translateY(0%);
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -1437,9 +1437,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-#about .about-col.bg1:hover{
+#about .about-col.bg1.active{
 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   transition: 1s;
 }
 
@@ -1474,7 +1474,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .wrap_up {
 
-  height:12%;
+  height:10%;
   width: 100%;
   top: 90%;
   /* background: #666666; */
@@ -1499,6 +1499,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index:1 ;
   border-bottom: #fff;
   padding:0;
+  cursor: pointer;
   
 }
 
@@ -1508,7 +1509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding:0;
   margin: 0;
   position: absolute;
-  top:0%;
+  top:-5%;
   display: flex;
   left:50%;
   width: 25px;
@@ -1520,50 +1521,63 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--mt-color);
-  transition: 0.4s ease-in;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  
 }
+
+#about .wrap_up .wrap_icon.hover{
+
+  background: var(--mt-color);
+}
+
+#about .wrap_up .wrap_icon.hover i{
+  color: #FFF;
+
+}
+
 
 #about .wrap_up  i{
-
   color: var(--mt-color);
   font-size: 1.5em;
-
 }
+
 
 #about .wrap_up  i.end{
-  
- display: none;
+  display: none;
 }
 
-
-#about .about-col.bg1:hover .wrap_up{
-
+#about .wrap_up.active{
+/* #about .about-col.bg1:hover .wrap_up{ */
   top: 0%;
-  /* background: #666666; */
-
-
 }
 
-#about .about-col.bg1:hover .wrap_up_inner {
+#about .wrap_up.active .wrap_up_inner {
 
  top: 0%;
  border-top: none;
  border-bottom: 0.5px solid rgba(199, 198, 198, 0.4);
  
- 
 }
 
-#about .about-col.bg1:hover .wrap_icon{
+
+
+#about .wrap_up.active .wrap_icon{
   top:52%;
   background: rgb(34, 34, 34);
 }
 
-#about .about-col.bg1:hover .wrap_up  i.default{
+#about .wrap_up.active .wrap_icon.hover{
+  background:var(--mt-color);
+}
+
+
+#about .wrap_up.active  i.default{
   display:none;
   
 }
 
-#about .about-col.bg1:hover .wrap_up  i.end{
+#about .wrap_up.active i.end{
   display: inline;
  }
 

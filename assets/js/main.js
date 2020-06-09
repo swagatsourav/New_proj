@@ -240,4 +240,39 @@
     animateOut: 'fadeOut'
   });
 
+  // Click effect on up and down arrow of the our value page 
+  $(document).ready(function() 
+  {        
+    $("#about .wrap_up .wrap_up_inner,#about .wrap_up .wrap_icon").click(function () 
+      { 
+      if ( $("#about .wrap_up").hasClass("active") ) 
+          {
+          $("#about .wrap_up").removeClass("active");
+          }
+      else{
+        $("#about .wrap_up").addClass("active");
+          }
+
+      if ( $("#about .about-col.bg1").hasClass("active") ) 
+          {
+          $("#about .about-col.bg1").removeClass("active");
+          }
+      else{
+        $("#about .about-col.bg1").addClass("active");
+          }
+      });
+    
+    // Hover effect on the Our Values
+    $("#about .wrap_up .wrap_up_inner,#about .wrap_up .wrap_icon").hover(function () 
+    
+      {
+        $("#about .wrap_up .wrap_icon").addClass("hover"); 
+      }, function () 
+      {
+        $("#about .wrap_up .wrap_icon").removeClass("hover");   
+      }
+    );
+
+  });
+
 })(jQuery);
