@@ -1681,20 +1681,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 } */
 
 
-
-/* #solutions > .container {
-  padding-top: 40px;
-  padding-bottom: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  
-} */
-
 #solutions .section-header p {
   text-align: center;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #333;
   position: relative;
 }
@@ -2011,6 +2001,58 @@ height: auto;
   background-color:#fad831;
 }
   
+
+/*--------------------------------------------------------------
+# Individual Solutions Section
+--------------------------------------------------------------*/
+
+#individual_solution {
+
+  margin-bottom: 30px;
+  
+}
+
+
+#individual_solution .section-header h2 {
+  font-size: 28px;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top:50px;
+}
+
+
+
+#individual_solution .section-header h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40px;
+  background-color: var(--mt-color);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#individual_solution img {
+
+  margin-bottom: 120px;
+  
+}
+
+@media (max-width:576px){
+
+  #individual_solution .section-header h2 {
+    font-size: 25px;
+    margin-top:35px;
+  }
+
+}
+
+/* Mechanical Section */
+
+
+
+
 /*--------------------------------------------------------------
 # Why Choose Us
 --------------------------------------------------------------*/
