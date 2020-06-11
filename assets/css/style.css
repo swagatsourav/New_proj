@@ -1670,7 +1670,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Solutions Section
 --------------------------------------------------------------*/
 
 /* .service_area header h1 {
@@ -1682,16 +1682,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 
-#services > .container {
+/* #solutions > .container {
   padding-top: 40px;
   padding-bottom: 0px;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.9); */
+  background: rgba(0, 0, 0, 0.9);
   
-}
+} */
 
-#services .section-header p {
+#solutions .section-header p {
   text-align: center;
   padding-bottom: 10px;
   margin-bottom: 15px;
@@ -1699,7 +1699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-#services .section-header h3,#services .section-header p {
+#solutions .section-header h3,#solutions .section-header p {
 
   color: rgb(231, 228, 228) !important ;
 }
