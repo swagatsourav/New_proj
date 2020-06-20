@@ -2035,10 +2035,21 @@ height: auto;
 
 #individual_solution img {
 
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   
 }
 
+#individual_solution hr{
+  margin-bottom: 30px;
+}
+@media (max-width:667px){
+
+#individual_solution #nav-tabContent{
+
+  padding-top: 20px;
+}
+
+}
 @media (max-width:576px){
 
   #individual_solution .section-header h2 {
@@ -2048,27 +2059,44 @@ height: auto;
 
 }
 
-/* Mechanical Section */
+#individual_solution .nav-tabs .nav-link.active {
 
-#mechanical_solution .nav-tabs .nav-link.active {
-
-background: var(--mt-color);
-border-color: var(--mt-color);
-}
-
-nav .pagination li{
-
-  cursor: pointer;
-
-}
-
-nav .pagination li.active .page-link,nav .pagination li.active {
-
-  cursor: default ;
   background: var(--mt-color);
   border-color: var(--mt-color);
+  }
+  
+  #individual_solution .nav-tabs .nav-link {
+  
+    padding:15px;
+  
+    }
+  
+  
+  
+  nav .pagination li{
+  
+    cursor: pointer;
+  
+  }
+  
+  nav .pagination li.active .page-link,nav .pagination li.active {
+  
+    cursor: default ;
+    background: var(--mt-color);
+    border-color: var(--mt-color);
+  
+  }
 
-}
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+
+    border: 1px solid rgb(222, 226, 230);
+    
+  }
+
+
+/* Mechanical Section */
+
+
 
 
 /*--------------------------------------------------------------
