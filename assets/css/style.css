@@ -2035,7 +2035,7 @@ height: auto;
 
 #individual_solution img {
 
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   
 }
 
@@ -2050,7 +2050,25 @@ height: auto;
 
 /* Mechanical Section */
 
+#mechanical_solution .nav-tabs .nav-link.active {
 
+background: var(--mt-color);
+border-color: var(--mt-color);
+}
+
+nav .pagination li{
+
+  cursor: pointer;
+
+}
+
+nav .pagination li.active .page-link,nav .pagination li.active {
+
+  cursor: default ;
+  background: var(--mt-color);
+  border-color: var(--mt-color);
+
+}
 
 
 /*--------------------------------------------------------------
