@@ -2008,7 +2008,7 @@ height: auto;
 
 #individual_solution {
 
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   
 }
 
@@ -2021,7 +2021,15 @@ height: auto;
   margin-top:50px;
 }
 
-
+#individual_solution #industrial_automation .section-header h2,
+#individual_solution #ene_automation .section-header h2
+{
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top:50px;
+}
 
 #individual_solution .section-header h2::after {
   content: "";
@@ -2040,7 +2048,8 @@ height: auto;
 }
 
 #individual_solution hr{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  width: 70%
 }
 @media (max-width:667px){
 
@@ -2094,7 +2103,39 @@ height: auto;
   }
 
 
-/* Mechanical Section */
+/* Mechanical Solution Section */
+
+
+
+/* Industrial Automation Section */
+
+
+
+#individual_solution #industrial_automation,
+#individual_solution #ene_automation
+ {
+  padding-top: 1px;
+  background: #242424 !important;
+  
+  
+}
+
+#individual_solution #industrial_automation .item h4,
+#individual_solution #industrial_automation .item p,
+#individual_solution #ene_automation .item h4,
+#individual_solution #ene_automation .item p
+{
+color: #ccc;
+
+}
+
+#industrial_automation hr,
+#ene_automation hr{
+  /* color:#ccc; */
+  border-color: rgb(59, 59, 59);
+  /* background: #ccc; */
+ 
+}
 
 
 

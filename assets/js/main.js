@@ -183,11 +183,11 @@
   //   time: 1000
   // });
 
-  // Mechanical Section
-  
-  // Carousel initiation
 
-  $('#mechanical_solution .owl-carousel').owlCarousel({
+  
+  // individual Solutions Carousel initiation
+
+  $('#individual_solution .owl-carousel').owlCarousel({
 
     items:1,
     margin:10,
@@ -196,15 +196,18 @@
     dots : false,
     autoplay : false,
     autoplayTimeout: 10000,
-    animateOut: 'fadeOut',
+    // animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     loop:true,
-
+    
 
   });
 
  
-  // Automotive Section 
+  //------------   // Mechanical Solution //------------------
+
+
+  // Automotive Section
 
   var owl_auto = $('#owl-mec-auto .owl-carousel');
 
@@ -315,6 +318,246 @@ $('#owl-mec-indus nav .pagination li.pg a').click(
     // alert(curr_elem_id)
 
     $('#owl-mec-indus nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+  //------------   // Industrial Automation //------------------
+
+  // Design Process Automation 
+
+  var owl_indus_des = $('#owl-ind-design .owl-carousel');
+
+  $('#owl-ind-design nav .pagination li#next-pg').click(function() {
+    owl_indus_des.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-ind-design nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_indus_des.trigger('prev.owl.carousel');
+  });
+
+  $('#owl-ind-design nav .pagination li.pg a').click(
+      function () {
+        var val = $(this).html();
+        owl_indus_des.trigger('to.owl.carousel',[val-1,100]);
+
+    });
+
+  owl_indus_des.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+
+    // alert(curr_elem_id)
+
+    $('#owl-ind-design nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+// Factory Automation Section 
+
+  var owl_indus_fact = $('#owl-ind-fact .owl-carousel');
+
+  $('#owl-ind-fact nav .pagination li#next-pg').click(function() {
+    owl_indus_fact.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-ind-fact nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_indus_fact.trigger('prev.owl.carousel');
+  });
+
+$('#owl-ind-fact nav .pagination li.pg a').click(
+    function () {
+      var val = $(this).html();
+      owl_indus_fact.trigger('to.owl.carousel',[val-1,100]);
+
+  });
+
+  owl_indus_fact.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+    
+    // alert(curr_elem_id)
+
+    $('#owl-ind-fact nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+
+  //------------//AL ML and IoT Solution//------------------
+
+
+  // Automotive Section
+
+  var owl_aimliot_auto = $('#owl-aimliot-auto .owl-carousel');
+
+  $('#owl-aimliot-auto nav .pagination li#next-pg').click(function() {
+    owl_aimliot_auto.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-aimliot-auto nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_aimliot_auto.trigger('prev.owl.carousel');
+  });
+
+$('#owl-aimliot-auto nav .pagination li.pg a').click(
+    function () {
+      var val = $(this).html();
+      owl_aimliot_auto.trigger('to.owl.carousel',[val-1,100]);
+
+  });
+
+  owl_aimliot_auto.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+    // alert(curr_elem_id)
+
+    $('#owl-aimliot-auto nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+// Medical Section 
+
+  var owl_aimliot_med = $('#owl-aimliot-med .owl-carousel');
+
+  $('#owl-aimliot-med nav .pagination li#next-pg').click(function() {
+    owl_aimliot_med.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-aimliot-med nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_aimliot_med.trigger('prev.owl.carousel');
+  });
+
+$('#owl-aimliot-med nav .pagination li.pg a').click(
+    function () {
+      var val = $(this).html();
+      owl_aimliot_med.trigger('to.owl.carousel',[val-1,100]);
+
+  });
+
+  owl_aimliot_med.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+
+    // alert(curr_elem_id)
+
+    $('#owl-aimliot-med nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+
+//------------//Electronic and Embeded Solution//------------------
+
+
+  // Automotive Section
+
+  var owl_ene_auto = $('#owl-elec-auto .owl-carousel');
+
+  $('#owl-elec-auto nav .pagination li#next-pg').click(function() {
+    owl_ene_auto.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-elec-auto nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_ene_auto.trigger('prev.owl.carousel');
+  });
+
+$('#owl-elec-auto nav .pagination li.pg a').click(
+    function () {
+      var val = $(this).html();
+      owl_ene_auto.trigger('to.owl.carousel',[val-1,100]);
+
+  });
+
+  owl_ene_auto.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+    // alert(curr_elem_id)
+
+    $('#owl-elec-auto nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
+  
+  });
+
+
+// Medical Section 
+
+  var owl_ene_med = $('#owl-elec-med .owl-carousel');
+
+  $('#owl-elec-med nav .pagination li#next-pg').click(function() {
+    owl_ene_med.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('#owl-elec-med nav .pagination li#prev-pg').click(function() {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      owl_ene_med.trigger('prev.owl.carousel');
+  });
+
+$('#owl-elec-med nav .pagination li.pg a').click(
+    function () {
+      var val = $(this).html();
+      owl_ene_med.trigger('to.owl.carousel',[val-1,100]);
+
+  });
+
+  owl_ene_med.on('changed.owl.carousel', function(event) {
+
+    var curr_elem_id ="ind"+ (event.item.index-1);
+    if (curr_elem_id == "ind0"){
+      curr_elem_id = "ind3";
+    }
+
+    if (curr_elem_id == "ind4"){
+      curr_elem_id = "ind1";
+    }
+
+    // alert(curr_elem_id)
+
+    $('#owl-elec-med nav .pagination li.'+curr_elem_id).addClass('active').siblings().removeClass('active');
   
   });
 
