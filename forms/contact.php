@@ -1,41 +1,45 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
-
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
-
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
+   
+     $UserName = $_POST['name'];
+     $Sub = "nocnx: New message from ".$UserName;
+     $Subject = $_POST['subject'];
+     $message = nl2br(htmlspecialchars($_POST['message']));
+     $Msg = '
+     <html>
+        <head>
+          <title>Query from nocnx</title>
+        </head>
+        <body>
+            <p style="font-size: 20px;"><strong style="color:blue;padding-right: 16px;">Name : </strong>'.$UserName.'  </p>
+            <p style="font-size: 20px;"><strong style="color: blue;">Subject : </strong>'.$Subject.' </p>
+            <p style="font-size: 20px;color: blue;"><strong>Content :</strong></p>
+            <p style="font-size: 16px;" >'. $message  .'</p>
+        </body>
+     </html>
+     ';
+     
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    //  $to = 'pinaki.j@gmail.com';
+     $to = 'alpstech2018@gmail.com';
+     $header = "From: ".$UserName."<". strip_tags($_POST['email']) .">\r\n";
+     $header .= "Reply-To:" . strip_tags($_POST['email']) . "\r\n";
+     $header .= "Bcc: swagatsourav92@gmail.com". "\r\n";
+    //  $headers .= "X-Priority: 1 (Highest)\n"; 
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    //  $headers .= "X-MSMail-Priority: High\r\n"; 
+      
+     $header .= "MIME-Version: 1.0\r\n";
+     $header .= "Content-type: text/html\r\n";
+     $headers .= "Importance: High";
+      
+     
+     if(mail($to,$Sub,$Msg,$header))
+       {
+           die( 'OK');
+       }
+     else
+      {
+          die( 'NOT OK');
+      }
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
 ?>

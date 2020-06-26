@@ -2868,7 +2868,7 @@ portfolio section
   font-size: 15px;
 }
 
-#contact .submit-email-form input::focus, #contact .submit-email-form textarea::focus {
+#contact .submit-email-form input:focus, #contact .submit-email-form textarea:focus {
   background-color: var(--mt-color);
 }
 
@@ -2986,8 +2986,11 @@ portfolio section
   display: inline-block;
   padding-top:0px;
   position: relative;
+  
   left:50%;
   transform: translateX(-50%);
+  
+
 
 
 }
@@ -3005,6 +3008,7 @@ portfolio section
   margin: 0;
   font-weight: 600;
   box-sizing: border-box;
+  letter-spacing: 3px;
 }
 
 #footer h3 a#second_line {
@@ -3012,7 +3016,7 @@ portfolio section
   font-size: 15px;
   margin: 0;
   font-weight: 300;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   box-sizing: border-box;
 }
 

@@ -24,6 +24,7 @@ jQuery(document).ready(function($) {
         }
 
         switch (rule) {
+          
           case 'required':
             if (i.val() === '') {
               ferror = ierror = true;
@@ -98,6 +99,7 @@ jQuery(document).ready(function($) {
     if( ! action ) {
       this_form.find('.loading').slideUp();
       this_form.find('.error-message').slideDown().html('The form action property is not set!');
+      
       return false;
     }
     
@@ -107,7 +109,7 @@ jQuery(document).ready(function($) {
     
     $.ajax({
       type: "POST",
-      url: action,
+      url: "Helo.php",
       data: str,
       success: function(msg) {
         if (msg == 'OK') {
