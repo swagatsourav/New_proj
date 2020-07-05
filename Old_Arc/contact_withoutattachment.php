@@ -18,18 +18,11 @@
 
 // Detais of the mail to be send:
     
-    if(!empty($_FILES["image_uploads"]["name"])){ 
-        $path = 'upload/' . $_FILES["image_uploads"]["name"];
-        move_uploaded_file($_FILES["image_uploads"]["tmp_name"],$path);
-        $mail->addAttachment($path);
-    }
-    
     $Name = $_POST['name'];
     $mail->Subject="nocnx: New message from ".$Name;
     $mail->setFrom($_POST['email'],$Name);
-    $mail->addAddress('swagat.miku@gmail.com');
+    $mail->addAddress('alpstech2018@gmail.com');
     $mail->addReplyTo($_POST['email']);
-    
     $mail->isHTML(true);
     $mail->Body= '
      <html>
@@ -44,19 +37,15 @@
         </body>
      </html>
      ';
-     
+  
     if($mail->send())
-        {   
-            
-            echo('OK');
+        {
+            echo 'OK';
         }
     else
         {
-            echo( 'Some thing went Wrong. Try changing the attachment.');
+            die( 'Some thing went Wrong');
         }
 
-    if(!empty($_FILES["image_uploads"]["name"])){ 
-            unlink($path);
-        }
 
 ?>

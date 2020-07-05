@@ -1245,7 +1245,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header p {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 30px;
   color: #333;
   position: relative;
@@ -1338,7 +1338,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
     font-size: 16px;
     margin-bottom: 0;
-    text-align: left;
+    text-align: justify;
     padding-left: 20px;
     padding-right: 15px;
   }
@@ -2971,71 +2971,7 @@ portfolio section
   }
 }
 
-.custom-file-label.selected img {
-  height: 100%;
-  position: relative;
-  top: -1%;
-  bottom: 0px;
-  padding-top: 0px;
-  border-radius: 5%;
-  display: none;
-}
 
-.custom-file-label.selected span {
-  padding-left:5px;
-  padding-top:0.3rem;
-  display: inline-block;
-  font-size: 17px;
-  line-height:0.5vh;
-  vertical-align:center;
-}
-
-.custom-file-label.selected {
-   padding:0;
-   vertical-align:center;
-}
-
-/* .custom-file-label img {
-  display:none;
-} */
-
-@media (max-width: 1024px) {
-  .custom-file-label.selected span,.custom-file-label span#invalid {
-      font-size: 13px;
-      line-height:0.5vh;
-    }
-}
-
-@media (max-width: 768px) {
-  .custom-file-label.selected span,.custom-file-label span#invalid {
-      font-size: 11px;
-      line-height:0.5vh;
-    }
-}
-@media (max-width: 576px) {
-  .custom-file-label.selected span,.custom-file-label span#invalid {
-      font-size: 8px;
-      line-height:0.5vh;
-    }
-
-}
-
-p#remove {
-  padding-top: 10px;
-  color: #ed7f12;
-  text-decoration-line: underline;
-  display: inline-block;
-  cursor: pointer;
-  display:none;
-}
-
-p#remove:hover {
-  color: #fed400;
-}   
-
-p#remove:active {
-  color: #c4a921;
-}
 
 /*--------------------------------------------------------------
 # Footer
@@ -3205,34 +3141,11 @@ p#remove:active {
   
 }
 
-#footer .modal-content{  background:rgb(26, 26, 26) }
-#footer .modal-footer button.btn.btn-warning { margin: auto;}
-/* #footer h5#privacyPolicyModal {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-#footer button.close {color: white;}
-
-
 @media (max-width: 576px){
 
   #footer .copyright{
+    /* background: var(--mt-color); */
     font-size: 12px;
        
   }
-
-  #footer #legal{
-
-    display: block;
-
-  }
-}
-
-@media (max-width: 768px){
-    #footer #legal{
-
-      display: block;
-
-    }
 }

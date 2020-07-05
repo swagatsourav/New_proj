@@ -654,11 +654,4 @@ $('#owl-elec-med nav .pagination li.pg a').click(
 
   });
 
-  $(".custom-file-input").on("change", function() {
-    var fileName = $(this).val().split("\\").pop();
-    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-  });
-
-  
-
 })(jQuery);
