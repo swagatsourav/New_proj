@@ -1,13 +1,22 @@
 /* header,<section-pend>,Navigation */
 
+/* Google fonts */
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,400i,500,600,700,800|Roboto");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-@font-face {
-  font-family: "Brandon Grotesque Bold";
-  src: local("Brandon Grotesque Bold"),
-    url("../fonts/BrandonGrotesque/brandon_bld-webfont.woff") format("woff");
-}
+/* Vendor CSS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css");
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("../vendor/font-awesome/css/font-awesome.min.css");
+@import url("../vendor/ionicons/css/ionicons.min.css");
+@import url("../vendor/venobox/venobox.css");
+@import url("../vendor/owl.carousel/assets/owl.carousel.min.css");
+@import url("../vendor/owl.carousel/assets/owl.theme.default.css");
 
 
 /* Declaring the variables */
