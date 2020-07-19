@@ -27,7 +27,7 @@
     $Name = $_POST['name'];
     $mail->Subject="nocnx: New message from ".$Name;
     $mail->setFrom($_POST['email'],$Name);
-    $mail->addAddress('swagat.miku@gmail.com');
+    $mail->addAddress('nocnxtech@gmail.com');
     $mail->addReplyTo($_POST['email']);
     
     $mail->isHTML(true);

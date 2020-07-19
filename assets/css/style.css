@@ -14,7 +14,7 @@
 @import url("../vendor/bootstrap/css/bootstrap.min.css");
 @import url("../vendor/font-awesome/css/font-awesome.min.css");
 @import url("../vendor/ionicons/css/ionicons.min.css");
-@import url("../vendor/venobox/venobox.css");
+/* @import url("../vendor/venobox/venobox.css"); */
 @import url("../vendor/owl.carousel/assets/owl.carousel.min.css");
 @import url("../vendor/owl.carousel/assets/owl.theme.default.css");
 
@@ -532,7 +532,7 @@ header#header.header-scrolled #logo p a {
 
 @media (min-width: 768px) {
   #nav-menu-container {
-    padding-right: 100px;
+    padding-right: 7vw;
     margin: 10px 0;
   }
 }
@@ -1254,7 +1254,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header p {
-  text-align: center;
+  text-align: justify;
   padding-bottom: 30px;
   color: #333;
   position: relative;
@@ -1287,13 +1287,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   );
 }
 
-/* #featured-services i {
-  color: var(--mt-color);
-  font-size: 48px;
-  display: inline-block;
-  line-height: 1;
-} */
-
 #featured-services img {
   color: var(--mt-color);
   width:100%;
@@ -1311,10 +1304,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: var(--mt-color);
 }
 
-/* #featured-services h4 a:hover {
-  color: var(--mt-color);
-} */
-
 #featured-services p {
   font-family: var(--font-bold) ;
   font-size: 14px;
@@ -1327,8 +1316,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #featured-services svg.icon {
   width: 80px;
   height: auto;
-  /* margin: auto;
-  display: block; */
 
 }
 
@@ -1459,14 +1446,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   
 }
 
-/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw
-*/
 #about .wrap_up {
 
   height:10%;
   width: 100%;
   top: 90%;
-  /* background: #666666; */
   position: absolute;
   transition: 0.4s ease-in ;
   z-index: 3;
@@ -1497,7 +1481,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-top: 0.5px solid var(--mt-color);
   
  }
-
 
 
 #about .wrap_up .wrap_icon{
@@ -1543,7 +1526,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .wrap_up.active{
-/* #about .about-col.bg1:hover .wrap_up{ */
   top: 0%;
 }
 
@@ -1582,11 +1564,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .wrap_up.active i.end{
   display: inline;
  }
-
-
-
-
-/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 
 #about .about-col .hover_content {
   position: absolute;
@@ -2081,11 +2058,7 @@ height: auto;
 # Individual Solutions Section
 --------------------------------------------------------------*/
 
-#individual_solution {
 
-  /* margin-bottom: 30px; */
-  
-}
 
 
 #individual_solution .section-header h2 {
@@ -2178,8 +2151,41 @@ height: auto;
   }
 
 
-/* Mechanical Solution Section */
+#individual_solution .header_img{
 
+  height: 55vh;
+  width: 100%;
+}
+
+
+#individual_solution ul.solution_points li {
+ margin-bottom:10px;
+}
+
+#individual_solution ul.solution_points li i {
+  margin-right: 10px;
+  /* border: 1px solid #FED400; */
+  padding: 6px;
+  /* border-radius: 50%; */
+  color: #fed400;
+  float: left;
+}
+
+#individual_solution ul.solution_points li p {
+
+  margin-left:50px;
+}
+
+#individual_solution ul.solution_points {
+  list-style: none;
+  font-family: Montserrat;
+  padding: 0px;
+}
+
+
+
+
+/* Mechanical Solution Section */
 
 
 /* Industrial Automation Section */
@@ -2206,11 +2212,14 @@ color: #ccc;
 
 #industrial_automation hr,
 #ene_automation hr{
-  /* color:#ccc; */
   border-color: rgb(59, 59, 59);
-  /* background: #ccc; */
- 
 }
+
+
+
+
+
+
 
 
 
@@ -3071,7 +3080,7 @@ p#remove:active {
   color: #eee;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 14px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -3163,6 +3172,12 @@ p#remove:active {
   font-family: var(--font-one);
 }
 
+#footer .copyright a {
+
+  color: rgba(252, 206, 1, 0.8);
+
+}
+
 @media (max-width: 768px) {
   #footer p a {
     font-size: 8px;
@@ -3223,25 +3238,33 @@ p#remove:active {
 } */
 #footer button.close {color: white;}
 
+#footer .copyright i#sep{
+  margin: 0px 10px;
+}
+
+#footer .copyright #privacy{
+  margin-left: 10px;
+}
 
 @media (max-width: 576px){
 
   #footer .copyright{
-    font-size: 12px;
-       
+    font-size: 14px;  
   }
 
   #footer #legal{
-
     display: block;
-
   }
+  #footer .copyright #first_sep{
+    display: none;
+  }
+
 }
 
 @media (max-width: 768px){
     #footer #legal{
-
       display: block;
-
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
 }
