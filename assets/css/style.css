@@ -1817,13 +1817,45 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+.service_area .single_service .service_hover ul {
+
+padding-left: 15px;
+
+}
+
+.service_area .single_service .service_hover li {
+
+  font-size: 13px !important;
+  margin: 0 10px 5px 1px !important;
+  text-align: left;
+  list-style: none;
+
+}
+
+
+.service_area .single_service .service_hover li::before {
+
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fed400;
+  float: left;
+  margin-top: 5px;
+  margin-right: 7px;
+  
+}
+
+
+
+
 @media (max-width:768px){
 .service_area .single_service .service_hover p {
 
-  font-size: 13px;
-  margin: 0 20px 15px 15px;
+  font-size: 15px;
+  margin: 0 20px 5px 25px;
 
 }
+
 }
 
 
@@ -1832,10 +1864,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   .service_area .single_service .service_hover p {
 
     font-size: 13px !important;
-    margin: 0 10px 15px 10px !important;
+    margin: 0 10px 5px 14px !important;
   
   }
-
 
 }
 
